@@ -1,15 +1,15 @@
-1)**Create an object file**
+1)****Create an object file****
 
   	as --32 program.asm -o program.o
   	//this code invokes the "as" assembler and creates an object file as a 32 bit code 
   	//"as" assembler is preinstalled in linux
 
-2)**Linking**
+2)****Linking****
   
   	ld -m elf_i386 program.o -o program  
   	//this code invokes the linker and links the object files in an ELF format producing an executable code as output
 
-3)**Using the gdb**
+3)****Using the gdb****
   
   	a)gdb program -q
   
@@ -41,6 +41,6 @@
   
   	o) note that if name of variable is used to access memory then "&" should be used in prefix!
 
-4)**Tip**
+4)****Tip****
 
   	Use display $eflags before running any program to view how instructions affect the flags in the system
